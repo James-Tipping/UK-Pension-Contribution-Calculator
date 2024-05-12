@@ -1,0 +1,10 @@
+# Python specific
+__pycache__/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Python virtual environments
+venv/

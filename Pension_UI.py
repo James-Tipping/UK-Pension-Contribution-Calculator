@@ -117,7 +117,7 @@ def main():
              - The salary range is pseduorandomly generated, and so may vary when particular values are changed.
              - The employees who increase their pension contributions are also pseudorandomly selected.
              - A 'seed' value of 42 is used to ensure reproducibility. This means that if the same values are used, the same pseudorandom results will be produced. However, choosing different values may vary the distribution significantly.
-             - The company saving is calculated by summing the employer NI savings from all employees who increase their personl pension 
+             - The company saving is calculated by summing the employer NI savings from all employees who increase their personal pension 
              contributions from an original figure of 5%.
              ''')
     
@@ -136,6 +136,12 @@ def main():
     fig.update_xaxes(title_text='Annual Salary (£)')
     fig.update_yaxes(title_text='Number of Employees')
     st.plotly_chart(fig, use_container_width=True)
+    
+    st.write('''
+            The data and opinions presented in this calculator are for illustrative purposes only, and should not be taken as financial advice.
+            The author is not a financial advisor, and the information presented may not be accurate or up-to-date. 
+            Please consult a suitably qualified financial advisor before making any financial decisions.
+             ''')
     
     
 
