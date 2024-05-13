@@ -1,5 +1,7 @@
 # UK salary sacrifice pension contribution calculator
 
+### To see this app hosted, click here: [Calculator](https://uk-pension-contribution-calculator-7wusgmuh2hcjcllrarnc7g.streamlit.app)
+
 When utilising a salary sacrifice scheme, employers and employees typically both contribute towards an employee's pension. However, an employee
 contributing under said scheme reduces their taxable salary. Given that income tax, and both employee and employer national insurance (NI) 
 contributions are based on the taxable salary, increasing employee/personal pension contributions can be a tax efficient way of increasing effective overall renumeration. Increasing employee pension contributions decreases taxes paid by both parties.
@@ -40,12 +42,30 @@ The company saving based on all variables selected is calculated, along with a g
 
 ## How to install & use
 
-As this program with written in a Conda Python environment, no such 'requirements.txt' (common to Pip environments) can be given. However, an 
-'environment.yml' file has been generated to aid reproducibility. A Conda environment can be created and used by running the following command
-in your terminal (assuming you have Conda installed and accessible through your shell of choice):
+Conda was used as a package manager during development of this application. However, Streamlit Community Cloud has bugs when using environment.yml - Conda's equivalent of `requirements.txt`. Therefore, `pipreqs` was used to create a `requirements.txt` file, similar to that of Pip. `pipreqs` only records those modules actually used within a project, as opposed to Pip's `pip freeze`, which includes all modules in an environment, regardless of usage. Therefore, to run this project, follow the steps below.
+
+### Provision a new environment
 
 ```bash
-conda env create -f environment.yml
+python3 -m venv [environment_name]
+```
+
+### Activate the virtual environment (MacOS / Linux)
+
+```bash
+source [environment_name]/bin/activate
+```
+
+### Activate the virtual environment (Windows)
+
+```shell
+.\env\Scripts\activate
+```
+
+### Install required packages using pip
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Disclaimer
