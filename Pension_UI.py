@@ -101,13 +101,6 @@ def main():
                     )
     df.index.name = 'Annual Salary'
     
-    random_1 = Calculate.calculate_salary_after_pension_deductions(45000, scheme_personal_contribution/100)
-    random_2 = Calculate.calculate_employer_ni_contributions(random_1)
-    
-    st.write(f'Salary after pension deductions: £{random_1}')
-    st.write(f'Employer NI contributions: £{random_2}')
-    
-    
     st.write(df)
     
     st.title('Company Savings From The Scheme')
