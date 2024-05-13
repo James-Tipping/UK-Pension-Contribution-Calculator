@@ -113,7 +113,7 @@ def main():
     st.title('Company Savings From The Scheme')
     
     st.write('''
-            Using the sliders below, decide your average salary for the company.
+            Using the sliders below, decide the average salary within the company.
             A range of salaries will be created using a log-normal distribution to simulate the company's salary distribution.
             Then, choose the percentage of employees you expect to increase their pension contributions, and the new pension contributions
             of those chosen employees as a percentage of gross salary. Also, choose the number of employees,

@@ -40,7 +40,7 @@ The company saving based on all variables selected is calculated, along with a g
 
 ## How to install & use
 
-As this program with written in a Conda Python environment, so such 'requirements.txt' (common to Pip environments) can be given. However, an 
+As this program with written in a Conda Python environment, no such 'requirements.txt' (common to Pip environments) can be given. However, an 
 'environment.yml' file has been generated to aid reproducibility. A Conda environment can be created and used by running the following command
 in your terminal (assuming you have Conda installed and accessible through your shell of choice):
 
