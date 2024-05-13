@@ -101,6 +101,13 @@ def main():
                     )
     df.index.name = 'Annual Salary'
     
+    random_1 = Calculate.calculate_salary_after_pension_deductions(45000, scheme_personal_contribution/100)
+    random_2 = Calculate.calculate_employer_ni_contributions(random_1)
+    
+    st.write(f'Salary after pension deductions: £{random_1}')
+    st.write(f'Employer NI contributions: £{random_2}')
+    
+    
     st.write(df)
     
     st.title('Company Savings From The Scheme')
@@ -119,6 +126,8 @@ def main():
              - A 'seed' value of 42 is used to ensure reproducibility. This means that if the same values are used, the same pseudorandom results will be produced. However, choosing different values may vary the distribution significantly.
              - The company saving is calculated by summing the employer NI savings from all employees who increase their personal pension 
              contributions from an original figure of 5%.
+             - The salary range has been provided to give a more realistic view of the potential savings, given that in practice, 
+             companies are likely to have a range of salaries differing from the mean.
              ''')
     
     average_salary = st.number_input('Average Salary (£)', value=45_000, step=5_000)
